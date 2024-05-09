@@ -1,0 +1,113 @@
+@charset "UTF-8";
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+	background-color: #B4B4B8;
+	color: #222;
+}
+section{
+	width: 1000px;
+	height: 420px;
+	margin: 150px auto;
+	background-color: white;
+}
+form{
+	width: 96%;
+	height: 100%;
+	margin: auto;
+	padding: 20px;
+}
+form>p{
+	padding: 10px 5px;
+	font-size: 25px;
+	margin: 20px auto;
+}
+form div{
+	height: 60px;
+	margin: 20px auto;
+	padding: 5px;
+}
+form .pr{
+	height: 110px;
+	
+}
+form div label{
+	background-color: #f5f5f5;
+	display: block;
+	padding: 12px;
+	border-radius: 4px;
+	width: 90%;
+	line-height: 25px;
+	border: 2px solid #e5e5e5;
+	position: relative;
+}
+form div label:before{
+	position: absolute;
+	content: "Browse";
+	right: -2px;
+	top: -2px;
+	width: 100px;
+	height: 107%;
+	line-height: 50px;
+	background: #cccccc;
+	text-align: center;
+	border-radius: 0 4px 4px 0;
+	cursor: pointer;
+}
+progress{
+	width: 100%;
+	height: 30px;
+	appearance: none;
+	border-radius: 5px;
+}
+progress::-webkit-progress-bar{
+	width: 100%;
+	height: 20px;
+	background: whitesmoke;
+}
+progress::-webkit-progress-value{
+	background: #B9D7EA;
+}
+button{
+	margin: 10px;
+	padding: 12px 18px;
+	color: white;
+	font-size: 18px;
+	outline: none;
+	border: none;
+	background:#B9D7EA;
+	cursor: pointer;
+}
+button span:nth-child(2),
+button.active span:first-child{
+	display: none;
+}
+button.active span:nth-child(2){
+	display: inline-block;
+}
+.uploading{
+	position: relative;
+	padding-left: 20px;
+}
+.uploading:before{
+	position: absolute;
+	content: "";
+	left: -12px;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	border: 2px solid;
+	border-color: white transparent white transparent;
+	animation: rotate 1s infinite;
+}
+@keyframes rotate{
+	to{
+		transform: rotate(360deg); 	
+	}
+}
+
